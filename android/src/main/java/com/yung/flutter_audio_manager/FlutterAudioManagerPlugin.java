@@ -83,7 +83,7 @@ public class FlutterAudioManagerPlugin implements FlutterPlugin, MethodCallHandl
   }
 
   private Boolean changeToSpeaker() {
-    audioManager.setMode(AudioManager.MODE_NORMAL);
+    audioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
     audioManager.stopBluetoothSco();
     audioManager.setBluetoothScoOn(false);
     audioManager.setSpeakerphoneOn(true);
